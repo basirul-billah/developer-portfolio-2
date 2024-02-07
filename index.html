@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <div class="hero">
+
+        <!-- header starts -->
+        <header>
+            <nav>
+                <img src="/images/icons/menu-burger-white.png" class="menu-img" alt="hamburger-menu">
+                <a href="https://" class="logo">Basirul Billah</a>
+                <ul>
+                    <li><a href="http://">About</a></li>
+                    <li><a href="http://">Projects</a></li>
+                    <li><a href="http://">Contact</a></li>
+                </ul>
+                <button class="header-button" type="button"><span></span></button>
+                <button class="header-button" type="button"><span></span></button>
+            </nav>
+        </header>
+
+        <!-- hero body starts  -->
+        <div class="hero-body">
+            
+            <div class="text-container">
+                <h3>I'm a <span class="auto-type"></span> and my name is</h3>
+                <h1>Basirul Billah</h1>
+                <p>I am a web developer specializing in React, Next and Node. Open to hire.</p>
+                <a href="https://" class="hero-button">Hire me!</a>
+                <a href="https://" class="hero-button">Projects</a>
+            </div>
+            
+            <div class="photo-intro">
+                <img src="images/Rabbu-Dev.jpg" alt="basirul-billah-photo">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Programmer", "Designer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
 </body>
 </html>
