@@ -1,141 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Hind Siliguri", sans-serif;
+  box-sizing: border-box;
 }
 
 .hero {
-    background: #1d2026;
-    min-height: 100vh;
-    width: 100%;
-    color: #fff;
-    position: relative;
+  background: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
 }
 
 nav .menu-img {
-    width: 30px;
-    margin-right: 20px;
-    cursor: pointer;
+  width: 30px;
+  margin-right: 20px;
+  cursor: pointer;
 }
 
 nav .logo {
-    font-size: 300%;
-    font-family: 'Honk', system-ui;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 300%;
+  font-family: "Honk", system-ui;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 nav ul {
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .header-button {
-    background: #efefef;
-    height: 30px;
-    width: 60px;
-    border-radius: 20px;
-    border: 0;
-    outline: 0;
-    margin: 8px;
+  background: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  margin: 8px;
+  color: white;
+  font-weight: bold;
+  transition: background 0.5s;
 }
 
 .header-button span {
-    background-color: #999;
-    display: block;
-    height: 26px;
-    width: 26px;
-    border-radius: 50%;
-    margin: 2px;
+  background-color: #999;
+  display: block;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin: 2px;
+  transition: background 0.5s, margin 0.5s;
+}
+
+.activeLang {
+  background-color: green;
+}
+
+.activeLang span {
+  font-weight: bold;
+  margin-left: 31px;
 }
 
 .hero-body {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 50px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .auto-type {
-    font-family: 'Honk', system-ui;
-    font-size: 30px;
-    margin-left: 3px;
+  font-family: "Honk", system-ui;
+  font-size: 30px;
+  margin-left: 3px;
 }
 
 .text-container {
-    margin-right: 10%;
+  margin-right: 10%;
 }
 
 .text-container h3 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .text-container h1 {
-    margin: -5px;
-    color: orange;
-    font-size: 80px;
+  /* margin: 5px; */
+  color: orange;
+  font-size: 80px;
 }
 
 .text-container p {
-    padding-top: 15px;
-    padding-bottom: 25px;
-    font-size: large;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-size: large;
 }
 
 .photo-intro {
-    display: flex;
-    background-color: orange;
-    height: 320px;
-    width: 320px;
-    border-radius: 5px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(4deg);
-    box-shadow: 0 2px 10px rgba(255, 254, 254, 0.2);
+  display: flex;
+  background-color: orange;
+  height: 320px;
+  width: 320px;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(4deg);
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.2);
 }
 
 .photo-intro img {
-    padding: 5px;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    transform: rotate(-4deg);
-    box-shadow: 0 2px 10px rgba(255, 254, 254, 0.2);
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transform: rotate(-4deg);
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.2);
 }
 
 .hero-button {
-    text-decoration: none;
-    padding: 5px 15px;
-    margin-right: 20px;
-    background-color: orange;
-    color: white;
-    font-size: 18px;
-    border-radius: 30px;
-    box-shadow: 0 2px 10px rgba(255, 254, 254, 0.2);
-    cursor: pointer;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin-right: 20px;
+  background-color: orange;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.2);
+  cursor: pointer;
 }

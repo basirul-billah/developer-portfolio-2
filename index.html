@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basirul Billah Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="hero">
+      <!-- header starts -->
+      <header>
+        <nav>
+          <img
+            src="/images/icons/menu-burger-white.png"
+            class="menu-img"
+            alt="hamburger-menu"
+          />
+          <a href="https://" class="logo" id="logo">Basirul Billah</a>
+          <ul>
+            <li id="about"><a href="http://">About</a></li>
+            <li id="projects"><a href="http://">Projects</a></li>
+            <li id="contact"><a href="http://">Contact</a></li>
+          </ul>
+          <button id="langBtn" class="header-button"><span>en</span></button>
+        </nav>
+      </header>
 
-        <!-- header starts -->
-        <header>
-            <nav>
-                <img src="/images/icons/menu-burger-white.png" class="menu-img" alt="hamburger-menu">
-                <a href="https://" class="logo">Basirul Billah</a>
-                <ul>
-                    <li><a href="http://">About</a></li>
-                    <li><a href="http://">Projects</a></li>
-                    <li><a href="http://">Contact</a></li>
-                </ul>
-                <button class="header-button" type="button"><span></span></button>
-                <button class="header-button" type="button"><span></span></button>
-            </nav>
-        </header>
-
-        <!-- hero body starts  -->
-        <div class="hero-body">
-            
-            <div class="text-container">
-                <h3>I'm a <span class="auto-type"></span> and my name is</h3>
-                <h1>Basirul Billah</h1>
-                <p>I am a web developer specializing in React, Next and Node. Open to hire.</p>
-                <a href="https://" class="hero-button">Hire me!</a>
-                <a href="https://" class="hero-button">Projects</a>
-            </div>
-            
-            <div class="photo-intro">
-                <img src="images/Rabbu-Dev.jpg" alt="basirul-billah-photo">
-            </div>
+      <!-- hero body starts  -->
+      <div class="hero-body">
+        <div class="text-container">
+          <h3>
+            <span id="intro1">I'm a </span><span class="auto-type"></span>
+            <span id="intro2">and my name is</span>
+          </h3>
+          <h1 id="name">Basirul Billah</h1>
+          <p id="description">
+            I am a web developer specializing in React, Next and Node. Open to
+            hire.
+          </p>
+          <a href="https://" id="hireme" class="hero-button">Hire me!</a>
+          <a href="https://" id="projectsBtn" class="hero-button">Projects</a>
         </div>
 
+        <div class="photo-intro">
+          <img src="images/Rabbu-Dev.jpg" alt="basirul-billah-photo" />
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Programmer", "Designer"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true
-        })
+      var typed = new Typed(".auto-type", {
+        strings: ["Programmer", "Designer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
     </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
